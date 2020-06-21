@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transhalf"
+    >
+<LinearLayout
+    android:id="@+id/contentSubCategory"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp100"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10"
+    android:paddingBottom="@dimen/dp20"
+    android:paddingTop="@dimen/dp20"
+    android:gravity="center"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_sub_Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:orientation="horizontal"
+        />
+</LinearLayout>
+
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+    android:layout_marginRight="@dimen/dp15"
+    android:layout_marginTop="@dimen/dp15"
+        android:background="@color/white"
+        android:padding="@dimen/dp5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/trans"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/dp10"
+            android:gravity="center"
+            tools:ignore="RtlSymmetry,UselessParent">
+
+
+            <EditText
+                android:id="@+id/serchHome"
+                style="@style/backgroundTint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="viewStart"
+                android:hint="@string/search_products"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp13" />
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center"
+                android:paddingEnd="@dimen/dp10"
+                android:paddingStart="@dimen/dp10"
+                android:src="@drawable/search"
+                tools:ignore="ContentDescription" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/exLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:paddingEnd="@dimen/dp10"
+        android:paddingStart="@dimen/dp10"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:overScrollMode="never" />
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:background="@color/blue"/>
+</LinearLayout>

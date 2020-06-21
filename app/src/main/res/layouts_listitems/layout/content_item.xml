@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/boredritem"
+    android:gravity="center"
+    android:id="@+id/mainLayout"
+    android:layout_marginTop="@dimen/dp5"
+    android:layout_marginBottom="@dimen/dp5"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:src="@drawable/test"
+        app:civ_border_width="0dp"
+        app:civ_border_color="@color/white"
+        android:layout_margin="@dimen/dp5"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/dp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp5"
+        >
+        <TextView
+            android:id="@+id/nameItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name item"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp15"
+            android:singleLine="true"
+            android:ellipsize="end"
+        />
+        <TextView
+            android:id="@+id/weightItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="weight item"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp12"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_margin="@dimen/dp5"
+        android:layout_width="@dimen/dp90"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        android:textSize="@dimen/sp12"
+        android:text="Buy(10.02)"
+        android:textColor="@color/green"
+        android:background="@drawable/buttonrounding2"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_corner_green_right"
+        android:gravity="center"
+        android:padding="@dimen/dp5"
+        android:id="@+id/layCorner"
+        >
+        <ImageView
+            android:id="@+id/imgCorener"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:paddingStart="@dimen/dp10"
+            android:paddingEnd="@dimen/dp10"
+            android:src="@drawable/saveitemlist"/>
+    </LinearLayout>
+
+</LinearLayout>

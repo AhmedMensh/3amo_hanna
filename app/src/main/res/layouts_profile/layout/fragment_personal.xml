@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp20">
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/Red"
+                    android:text="@string/Name"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:background="@drawable/border_edittext">
+                    <EditText
+                        style="@style/backgroundTint1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:layout_gravity="start"
+                        android:paddingStart="@dimen/dp20"
+                        android:paddingEnd="@dimen/dp20"
+                        android:hint="@string/e_g_john_doe"
+                       android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/sp15" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/Red"
+                    android:text="@string/mobile_number"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:background="@drawable/border_edittext">
+                    <EditText
+                        style="@style/backgroundTint1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="@dimen/dp20"
+                        android:paddingEnd="@dimen/dp20"
+                        android:hint="@string/_0_555_123_456"
+                       android:inputType="phone"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/sp15" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/Red"
+                    android:text="@string/e_mail"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:background="@drawable/border_edittext">
+                    <EditText
+                        style="@style/backgroundTint1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="@dimen/dp20"
+                        android:paddingEnd="@dimen/dp20"
+                        android:hint="@string/you_gmail_com"
+                       android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/sp15" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/Red"
+                    android:text="@string/address"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+                <LinearLayout
+                    android:id="@+id/delAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/dp5"
+                    android:background="@drawable/border_edittext">
+                    <EditText
+                            android:id="@+id/editDelivAdd"
+                            style="@style/backgroundTint1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                            android:paddingStart="@dimen/dp20"
+                            android:paddingEnd="@dimen/dp20"
+                            android:hint="@string/city_street1_building5"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:editable="false"
+                            android:focusableInTouchMode="false"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/sp15" />
+                        <ImageView
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:src="@drawable/arrow_right"/>
+
+
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/newAddress"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:text="@string/add_new_address"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buttonrounding_red"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

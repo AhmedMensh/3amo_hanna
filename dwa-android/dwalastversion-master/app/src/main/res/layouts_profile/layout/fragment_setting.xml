@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp20">
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/Red"
+                    android:text="@string/password"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:background="@drawable/border_edittext">
+                    <EditText
+                        style="@style/backgroundTint1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="@dimen/dp20"
+                        android:hint="@string/passChar"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/sp15" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/Red"
+                    android:text="@string/notification"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_edittext">
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/dp2"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_profile_notif"
+                        android:id="@+id/LayleftNot"
+                        >
+                        <ImageView
+                            android:id="@+id/imgleftNot"
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="@dimen/dp25"
+                            android:layout_marginEnd="@dimen/dp5"
+                            android:layout_marginStart="@dimen/dp5"
+                            android:src="@drawable/enable_notification"/>
+
+                        <TextView
+                            android:id="@+id/leftNot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp15"
+                            android:text="Be Notified"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/dp2"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_profile_notif_raight"
+                        android:id="@+id/LayRighttNot"
+                        >
+                        <ImageView
+                            android:id="@+id/imgRighttNot"
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="@dimen/dp25"
+                            android:layout_marginEnd="@dimen/dp5"
+                            android:layout_marginStart="@dimen/dp5"
+                            android:src="@drawable/enable_notification"/>
+
+                        <TextView
+                            android:id="@+id/RighttNot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp15"
+                            android:text="Ignore News"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/Red"
+                    android:text="@string/language"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+
+
+                <RadioGroup
+                    android:id="@+id/RadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/english"
+                        android:textColor="@color/black"
+                        android:shadowColor="@color/Red"
+                        android:buttonTint="@color/Red"
+                        android:textSize="@dimen/sp15"
+                        android:checked="true"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/englixh" />
+                    <RadioButton
+                        android:id="@+id/arbic"
+                        android:textColor="@color/black"
+                        android:shadowColor="@color/Red"
+                        android:textSize="@dimen/sp15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/Red"
+                        android:text="@string/Arabic" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

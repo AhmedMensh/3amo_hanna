@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans"
+    >
+
+
+    <com.southernbox.springscrollview.SpringScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/scroll"
+        android:overScrollMode="always"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/trans">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp150"
+                android:background="@drawable/half6"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp150"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/half6_right"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ball1"
+                android:layout_width="@dimen/dp160"
+                android:layout_height="@dimen/dp160"
+                android:layout_marginStart="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp120"
+                android:src="@drawable/ic_snakes"
+
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintEnd_toStartOf="@id/ball2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/snacks"
+
+                app:layout_constraintTop_toBottomOf="@id/ball1"
+                app:layout_constraintEnd_toEndOf="@id/ball1"
+                app:layout_constraintStart_toStartOf="@id/ball1"
+                android:textColor="@color/brown"
+                android:textSize="@dimen/sp20" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ball2"
+                android:layout_width="@dimen/dp160"
+                android:layout_height="@dimen/dp160"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp145"
+                android:src="@drawable/ic_dairy"
+                android:layout_marginStart="@dimen/dp10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dairy"
+                android:textColor="@color/brown_light"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/ball2"
+                app:layout_constraintStart_toStartOf="@id/ball2"
+                app:layout_constraintTop_toBottomOf="@id/ball2"
+                android:textSize="@dimen/sp17" />
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp150"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/half6"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp150"
+                android:background="@drawable/half6_right"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ball2">
+
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ball3"
+                android:layout_width="@dimen/dp180"
+                android:layout_height="@dimen/dp180"
+                android:src="@drawable/ic_fruits"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                app:layout_constraintTop_toBottomOf="@+id/text1"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fruits"
+                app:layout_constraintTop_toBottomOf="@id/ball3"
+                app:layout_constraintStart_toStartOf="@id/ball3"
+                app:layout_constraintEnd_toEndOf="@id/ball3"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/sp20" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ball4"
+                android:layout_width="@dimen/dp160"
+                android:layout_height="@dimen/dp160"
+                android:layout_marginStart="@dimen/dp30"
+                android:src="@drawable/ic_beverages"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beverages"
+                app:layout_constraintEnd_toEndOf="@id/ball4"
+                app:layout_constraintStart_toStartOf="@id/ball4"
+                app:layout_constraintTop_toBottomOf="@id/ball4"
+                android:textColor="@color/test"
+                android:textSize="@dimen/sp20" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ball5"
+                android:layout_width="@dimen/dp160"
+                android:layout_height="@dimen/dp170"
+                android:layout_marginEnd="@dimen/dp35"
+                android:src="@drawable/ic_bakery"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text3"/>
+
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bakery"
+                android:textColor="@color/yellow"
+                app:layout_constraintTop_toBottomOf="@id/ball5"
+                app:layout_constraintEnd_toEndOf="@id/ball5"
+                app:layout_constraintStart_toStartOf="@id/ball5"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="@dimen/dp140"
+                android:layout_height="@dimen/dp140"
+                android:layout_marginStart="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/main6"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text4">
+
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ball6"
+                android:layout_width="@dimen/dp180"
+                android:layout_height="@dimen/dp180"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:src="@drawable/ic_vegetables"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout9"
+                app:layout_constraintTop_toBottomOf="@+id/text5"/>
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vegetables"
+                app:layout_constraintEnd_toEndOf="@id/ball6"
+                app:layout_constraintTop_toBottomOf="@id/ball6"
+                app:layout_constraintStart_toStartOf="@id/ball6"
+                android:textColor="@color/green"
+                android:textSize="@dimen/sp17" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp140"
+                android:background="@drawable/half6"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout12"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp150"
+                android:background="@drawable/half6_right"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text6">
+
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ball7"
+                android:layout_width="@dimen/dp180"
+                android:layout_height="@dimen/dp180"
+                android:src="@drawable/ic_personal_care"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout12"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout11"
+                app:layout_constraintTop_toBottomOf="@+id/text6"/>
+
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_care"
+                app:layout_constraintEnd_toEndOf="@id/ball7"
+                app:layout_constraintTop_toBottomOf="@id/ball7"
+                app:layout_constraintStart_toStartOf="@id/ball7"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sp17" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </com.southernbox.springscrollview.SpringScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sp15"
+        android:background="@color/white"
+        android:padding="@dimen/dp5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/trans"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/dp10"
+            android:gravity="center"
+            tools:ignore="RtlSymmetry,UselessParent">
+
+
+            <EditText
+                android:id="@+id/serchHome"
+                style="@style/backgroundTint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="viewStart"
+                android:hint="@string/search_products"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp13" />
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center"
+                android:paddingEnd="@dimen/dp10"
+                android:paddingStart="@dimen/dp10"
+                android:src="@drawable/search"
+                tools:ignore="ContentDescription" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

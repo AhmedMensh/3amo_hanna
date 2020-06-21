@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingBottom="@dimen/dp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp5"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp35"
+                android:src="@drawable/back_scan"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp15"
+                android:layout_marginEnd="@dimen/dp40"
+                android:textColor="@color/black"
+                android:text="@string/scan_image_title"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp15"
+        android:src="@drawable/shadow_scan"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp10"
+        android:layout_weight="1">
+        <ImageView
+
+            android:id="@+id/imgTake"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/nav1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgNav1"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp35"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:src="@drawable/camera"/>
+            <TextView
+                android:id="@+id/txtNav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/black"
+                android:text="@string/picture"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgNav2"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp35"
+                android:src="@drawable/change_img"/>
+            <TextView
+                android:id="@+id/txtNav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/black"
+                android:text="@string/change"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgNav3"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp35"
+                android:src="@drawable/delete"/>
+            <TextView
+                android:id="@+id/txtNav3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/black"
+                android:text="@string/delete"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgNav4"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp10"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp35"
+                android:src="@drawable/sendnow"/>
+            <TextView
+                android:id="@+id/txtNav4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/black"
+                android:text="@string/send_now"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

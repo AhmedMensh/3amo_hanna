@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp1"
+    android:background="@color/green"
+    />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp15"
+        android:src="@drawable/shadow_scan"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lin_layout">
+
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/input_mess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp5"
+            android:layout_weight="1"
+            android:background="@drawable/boredrcorner5dp"
+            android:hint="@string/write_a_message"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:padding="@dimen/dp5"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_margin="@dimen/dp5"
+            android:background="@drawable/send_img"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10" />
+
+    </LinearLayout>
+
+</LinearLayout>

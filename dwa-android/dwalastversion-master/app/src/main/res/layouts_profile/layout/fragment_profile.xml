@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transhalf"
+    >
+    <View
+        android:id="@+id/viewLine1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:background="@color/Red"/>
+<LinearLayout
+    android:id="@+id/contentSubCategory"
+    android:background="@color/Red"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp90"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10"
+    android:paddingBottom="@dimen/dp20"
+    android:paddingTop="@dimen/dp20"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp2"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/boredrcorner5dp"
+        android:id="@+id/LayPersonal"
+        >
+
+        <ImageView
+            android:id="@+id/imgPersonal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_marginStart="@dimen/dp5"
+            android:src="@drawable/pr_a2"/>
+
+        <TextView
+            android:id="@+id/Personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp15"
+            android:text="Personal"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp2"
+        android:gravity="center"
+        android:layout_weight="1"
+
+        android:background="@drawable/boredrcorner5dp"
+        android:id="@+id/LaySetting"
+        >
+
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_marginStart="@dimen/dp5"
+            android:src="@drawable/pr_b2"/>
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp15"
+            android:text="Settings"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp2"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/boredrcorner5dp"
+        android:id="@+id/LayAboutUs"
+        >
+        <ImageView
+            android:id="@+id/imgAboutUs"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_marginStart="@dimen/dp5"
+            android:src="@drawable/pr_c2"/>
+
+        <TextView
+            android:id="@+id/AboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp15"
+            android:text="AboutUs"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/frame_Profile_contener"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:background="@color/Red"/>
+</LinearLayout>

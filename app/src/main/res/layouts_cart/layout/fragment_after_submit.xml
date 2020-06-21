@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="@dimen/dp50"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/sp30"
+        android:gravity="center"
+        android:text="@string/successfully_ordered_to_dwa"
+        />
+    <TextView
+        android:id="@+id/dear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:textSize="@dimen/sp20"
+        android:gravity="center"
+        android:text="@string/dear_e_g_john_doe_your_order_has_been_sent"
+        />
+    <TextView
+        android:id="@+id/have"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/Red"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:textSize="@dimen/sp20"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="@string/have_a_healthy_day"
+        />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp10"
+        android:textSize="@dimen/sp15"
+        android:text="@string/close"
+        android:textColor="@color/Red"
+        android:background="@drawable/buttonrounding_with_red_border"
+        />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp20">
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/Red"
+                    android:text="@string/about_us"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/black"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque delectus dolorum eligendi, enim eos error et eum explicabo facere "
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+
+
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/Red"
+                    android:text="@string/contact_us"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:background="@drawable/border_edittext">
+                    <EditText
+                        style="@style/backgroundTint1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="@dimen/dp20"
+                        android:paddingEnd="@dimen/dp20"
+                        android:hint="@string/_0_555_123_456"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/sp15" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:visibility="gone"
+                    android:textColor="@color/Red"
+                    android:text="@string/text_us"
+                    android:layout_marginBottom="@dimen/dp10"
+                    />
+
+                <Button
+                    android:id="@+id/GoChat"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:text="@string/go_to_chat"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buttonrounding_red"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

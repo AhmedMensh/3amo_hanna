@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="start|center"
+        android:padding="@dimen/dp5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:src="@drawable/back_scan"/>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/dp10"
+    android:paddingEnd="@dimen/dp10"
+    android:layout_toEndOf="@+id/back"
+    android:layout_alignParentTop="true"
+    android:gravity="start|center"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_3amo_hanna"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/sp15"
+        />
+
+
+</LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

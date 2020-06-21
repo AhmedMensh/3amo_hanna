@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.FirstAcivityLanguage">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back_choose_lang"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:gravity="center"
+    android:layout_weight="1"
+    tools:ignore="NestedWeights">
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp250"
+        android:src="@drawable/logo"
+        />
+</LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtWelcom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/sp30"
+                android:gravity="center"
+                android:text="@string/welcome"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1.55"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/En"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:textSize="@dimen/sp15"
+                android:text="@string/englixh"
+                android:textColor="@color/white"
+                android:background="@drawable/buttonrounding_red"
+                />
+
+
+            <Button
+                android:id="@+id/Ar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:textSize="@dimen/sp15"
+                android:text="@string/Arabic"
+                android:textColor="@color/black"
+                android:background="@drawable/buttonrounding_with_red_border"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

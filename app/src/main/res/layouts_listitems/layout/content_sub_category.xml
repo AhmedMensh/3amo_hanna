@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp20"
+    android:paddingRight="@dimen/dp20"
+    android:paddingTop="@dimen/dp10"
+    android:paddingBottom="@dimen/dp10"
+    android:layout_marginStart="@dimen/dp2"
+    android:gravity="center"
+    android:background="@drawable/boredrcorner5dp"
+    android:id="@+id/mainLayout"
+    >
+
+
+    <TextView
+        android:id="@+id/nameSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp15"
+        android:text="name Sub Category"
+        />
+
+</LinearLayout>
